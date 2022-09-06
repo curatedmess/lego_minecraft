@@ -42,7 +42,7 @@ df %>%
   scale_x_continuous(expand = c(0, 0), limits = c(NA, 600), labels = percent_format(scale = 1)) +
   scale_fill_manual(values = c("#FFAA00", "#AAAAAA")) +
   annotate(geom = "curve", x = 450, y = "The Skeleton Attack", xend = 500, yend = "The Ice Spikes",curvature = -0.2, size = 0.5,  arrow = arrow(length = unit(2, "mm")), color = "#000000") +
-  annotate(geom = "text", y = "The Jungle Tree House", x = 450, label = "The Mountain Cave was released\nin 2017 for $249.99 and now has\nestimated value of $1,746.79.", hjust = "center", family = font, size = 3, color = "#000000") +
+  annotate(geom = "text", y = "The Jungle Tree House", x = 450, label = "Released in 2017 for $249.99,\nThe Mountain Cave has a current\nestimated value of $1,746.79.", hjust = "center", family = font, size = 3, color = "#000000") +
   theme_minimal() +
   theme(text = element_text(size = 9, family = font, color = "#000000"),
         plot.title = element_text(family = font, size = 28, hjust = 0, face = "bold"),
