@@ -62,9 +62,9 @@ df %>%
         plot.margin = unit(c(1.5, 1.5, 1.5, 1.5), "cm"),
         plot.background = element_rect(color = "#F2F2F2", fill = "#F2F2F2")) +
   labs(title = "LEGO MINECRAFT",
-       subtitle = "Since Lego introduced the Minecraft theme in 2013, 55 Lego sets have been retired,\ncreating a massive demand on secondary markets like Amazon and eBay. Collectors,\nhobbyists, and resellers are mining for gold, with nine of the retired sets having an\nestimated value greater than 200% over the original retail price.\n",
+       subtitle = "Since Lego introduced the Minecraft theme in 2013, 55 Lego sets have been retired,\ncreating a massive demand on secondary markets like Amazon and eBay. Collectors,\nhobbyists, and resellers are mining for gold, with nine of the retired sets having an\nestimated value greater than 200% over the original retail price (as of 9.6.2022).\n",
        caption = "\n\n#TidyTuesday | Data: rebrickable.com & brickeconomy.com | Design: Ryan Hart",
-       x = "\nGrowth rate based on estimated market prices (as of 9.6.2022)")
+       x = "\nGrowth rate based on estimated market prices")
 
 # save plot ---------------------------------------------------------------
 ggsave(paste0("lego_minecraft_", format(Sys.time(), "%d%m%Y"), ".png"), dpi = 320, width = 8, height = 12)
